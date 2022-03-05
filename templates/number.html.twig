@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lucky number!{% endblock %}
+
+{% block body %}
+  <div class="container" style="margin: 1em">
+    <div class="card" style="width: 80%">
+      <img src="img/web-g006b215c7_640.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h1 class="card-title">Lucky Number</h1>
+        <p class="card-text">Your lucky number is {{ number }}.</p>
+        <a href="{{path('lucky_index')}}" class="btn btn-primary">Give me other</a>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
